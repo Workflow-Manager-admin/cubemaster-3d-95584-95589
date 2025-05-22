@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import CubeContainer from './components/CubeContainer';
 
 function App() {
   return (
@@ -8,9 +9,9 @@ function App() {
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
             <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
+              <span className="logo-symbol">▣</span> CubeMaster 3D
             </div>
-            <button className="btn">Template Button</button>
+            <button className="btn">Help</button>
           </div>
         </div>
       </nav>
@@ -18,15 +19,20 @@ function App() {
       <main>
         <div className="container">
           <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
+            <div className="subtitle">Interactive 3D Puzzle</div>
             
-            <h1 className="title">cube_master_3d</h1>
+            <h1 className="title">CubeMaster 3D</h1>
             
             <div className="description">
-              Start building your application.
+              Explore, manipulate and solve the classic Rubik's cube in an immersive 3D environment.
             </div>
-            
-            <button className="btn btn-large">Button</button>
+          </div>
+          
+          {/* Main Cube Container Component */}
+          <CubeContainer />
+          
+          <div style={{ textAlign: 'center', marginTop: '20px' }}>
+            <button className="btn btn-large">Start Solving</button>
           </div>
         </div>
       </main>
